@@ -1,0 +1,11 @@
+Parcial_1=int(input("Ingrese nota del parcial 1: "))
+Parcial_2=int(input("Ingrese nota del parcial 2: "))
+Parcial_3=int(input("Ingrese nota del parcial 3: "))
+Examen=int(input("Ingrese nota del examen: "))
+Trabajo=int(input("Ingrese nota del trabajo: "))
+Porcentaje_parciales=(((Parcial_1+Parcial_2+Parcial_3)/3)*0.55)
+Porcentaje_examen=(Examen*0.30)
+Porcentaje_trabajo=(Trabajo*0.15)
+Calificacion_final=(Porcentaje_parciales+Porcentaje_examen+Porcentaje_trabajo)
+
+print("La calificaión final de computación es: ",Calificacion_final)

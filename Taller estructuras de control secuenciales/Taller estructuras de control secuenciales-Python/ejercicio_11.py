@@ -1,0 +1,16 @@
+Horas=int(input("Ingrese horas regulares trabajadas: "))
+Valor_hora=int(input("Ingrese valor hora regular: "))
+Horas_extras=int(input("Ingrese horas extras: "))
+Hijos=int(input("Ingrese numero de hijos: "))
+Valor_horas_extras=((Valor_hora*0.25)+Valor_hora)
+Sueldo_base=((Horas*Valor_hora)+(Horas_extras*Valor_horas_extras))
+Pago_forzoso=(Sueldo_base*0.05)
+Politica_habitacional=(Sueldo_base*0.02)
+Caja_ahorro=(Sueldo_base*0.07)
+Pago_hijos=(Hijos*173000)
+	
+Asignaciones=(Pago_hijos+180000+250000)
+Deducciones=(Pago_forzoso+Politica_habitacional+Caja_ahorro)
+Sueldo_neto=((Sueldo_base+Asignaciones)-Deducciones)
+	
+print("Las asignaciones totales son: ", Asignaciones,"Las deducciones totales son: ", Deducciones,"El sueldo neto es: ", Sueldo_neto)
